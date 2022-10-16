@@ -300,9 +300,12 @@ body {
   display: flex;
   column-gap: 10px;
   justify-content: center;
-
+  fill: currentColor;
   margin-top: 10px;
 }
+
+.svg-team {fill: currentColor;}
+
 .team-link {
   text-decoration: none;
   width: 44px;
@@ -311,16 +314,15 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--icons-color);
-  fill: currentColor;
+  /* fill: currentColor; */
   border-radius: 50%;
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover,
 .team-link:focus {
   background-color: var(--accent-color);
-  fill: var(--white-color);
+  color: var(--white-color);
 }
 
 .team-elements {
@@ -457,17 +459,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white-color);
-  fill: currentColor;
+  /* color: var(--white-color);
+  fill: currentColor; */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
   height: 44px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    /* fill 250ms cubic-bezier(0.4, 0, 0.2, 1), */
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer-icon {fill: var(--white-color);}
+
 .join-contact {
   margin: var(--margin-none);
   display: flex;
@@ -620,13 +625,13 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-
   opacity: 1;
   transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.25);
