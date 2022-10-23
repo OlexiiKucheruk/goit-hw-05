@@ -507,9 +507,7 @@ body {
 }
 
 /* start */
-.footer-form-container {
-color: var(--white-color);
-}
+
 .input-footer {
   display: flex;
 }
@@ -534,6 +532,7 @@ color: var(--white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+
 .footer-button {
   display: flex;
   align-items: center;
